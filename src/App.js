@@ -47,6 +47,7 @@ const App = () => {
 				if (birdLeft > pipeLeft && birdRight < pipeRight && birdBottom < pipeBottom) {
 					// Bird has crashed through the pipe, increase score
 					setScore((prevScore) => prevScore + 1);
+					score((prevScore) => prevScore + 1);
 				} else {
 					// Bird has hit the pipe, end the game
 					setGameOver(true);
